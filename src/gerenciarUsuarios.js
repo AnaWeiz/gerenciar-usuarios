@@ -1,11 +1,31 @@
-const usuarios = ['Matheus', 'Marcos', 'Lucas', 'João'];
+//Com essa lista, montar um objeto com os nomes + emails
+//const usuarios = ['Matheus', 'Marcos', 'Lucas', 'João'];
 
-function retornarUsuarios() { //retorna uma lista de nomes gravados na lista de nomes de usuários
+const usuarios = [
+    {
+        nome: 'Matheus',
+        email: 'matheus@gmail.com'
+    },
+    {
+        nome: 'Marcos',
+        email: 'marcos@gmail.com'
+    },
+    {
+        nome: 'Lucas',
+        email: 'lucas@gmail.com'
+    },
+    {
+        nome: 'João',
+        email: 'joao@gmail.com'
+    }
+];
+
+function retornarUsuarios() { //retorna uma lista de nomes + emails gravados na lista de usuários
     return usuarios;
 }
 
-function adicionarNovoUsuario(nome) { //adiciona um novo nome de usuário ao final da lista de usuários
-    usuarios.push(nome);
+function adicionarNovoUsuario(usuario) { //adiciona um novo usuário (nome + email) ao final da lista de usuários
+    usuarios.push(usuario);
 }
 
 module.exports = {
